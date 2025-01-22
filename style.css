@@ -1,0 +1,357 @@
+html{
+  scroll-behavior: smooth;
+}
+
+
+@font-face {
+  font-family: "Poppins";
+  src: url(fuentes/Poppins) format('truetype');
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #02001b;
+}
+
+.poppins-extrabold {
+  font-weight: 800;
+}
+
+.poppins-bold {
+  font-weight: 700;
+}
+
+h1 {
+  color: #03fa6e;
+  white-space: nowrap;  /* Asegura que el texto no se divida en varias líneas */
+}
+
+header {
+ 
+  margin: 40px;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /*distribuye el espacio libre de un contenedor de manera uniforme entre sus elementos*/
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+nav .center {
+  flex-grow: 1; /* controla el crecimiento de un elemento flexible en su dirección principal*/
+  text-align: center;
+}
+
+nav .derecha {
+  display: flex;
+  gap: 20px; /*Establece el tamaño del espacio entre las filas y columna*/
+  justify-content: flex-end;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: #03fa6e;
+}
+
+
+.logo a {
+  color: #03fa6e;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+
+/*SEGUNDA PARTE SECCION UNO -INICIO */
+
+#inicio{
+  text-align: left; /**alinea todo a la izquierda*/
+  margin: 20px; /*espacio alrederor de la seccion*/
+  background-color: #050A30 ;
+  
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+  background-color: #222245;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero .content {
+  flex: 1;
+}
+
+.hero .hashtag {
+  background-color: #7c4dff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.hero p {
+  line-height: 1.5;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.hero .image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+
+
+
+
+/* Estilo para la sección "Acerca de" */
+.about {
+  text-align: center;
+  color: #fff;
+  padding: 40px;
+  background-color: #02001b;  
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 1rem;
+  margin: 0 auto 30px;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.feature-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c1c2d;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.feature-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.feature-list ul li {
+  margin: 10px 0;
+}
+
+.feature-list span {
+  color: #03fa6e;
+  font-size: 1.5rem;
+  margin: 0 20px;
+}
+
+.cta {
+  text-align: center;
+}
+
+.cta h3 {
+  font-size: 1.5rem;
+  color: #03fa6e;
+  margin-bottom: 10px;
+}
+
+
+/* Estilo para la sección "Nuestros servicios" */
+.services {
+  text-align: center;
+  color: #fff;
+  padding: 40px;
+  background-color: #1c1c2d;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.services p {
+  font-size: 1rem;
+  color: #03fa6e; /* Color verde para destacar */
+  margin: 0 auto 30px;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+.service-list {
+  background-color: #222245;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.service-list ul {
+  list-style-type: disc;
+  padding-left: 20px; /* Espaciado para las viñetas */
+  margin: 0;
+  color: #fff;
+  text-align: left; /* Para alinear los elementos a la izquierda */
+}
+
+.service-list ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+
+
+
+
+/* seccion contacto */
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 60px;
+  background-color: #0a0a29;
+  min-height: 100vh;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.contact-text {
+  color: white;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+}
+
+.contact-method {
+  margin-bottom: 2rem;
+}
+
+.contact-method p {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.contact-method a {
+  color: #00ff66;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 80px; /* Para alinear con el contenido de la izquierda */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #00ff66;
+  color: black;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  width: fit-content;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.contact-form button:hover {
+  background-color: #00e65c;
+}
+
+
+/*footer*/
+
+.footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #0a0a29;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #666;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
